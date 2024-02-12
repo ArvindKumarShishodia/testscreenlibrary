@@ -1,4 +1,17 @@
+buildscript {
+    repositories {
+        google()
+        //mavenCentral()
 
+    }
+
+    dependencies {
+        // classpath("com.android.tools:api:8.2.2")
+
+        classpath ("com.android.tools.build:gradle:8.2.2")
+        //classpath("com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.1")
+    }
+}
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
@@ -12,18 +25,18 @@ plugins {
         }
     }
 }*/
-buildscript {
+/*buildscript {
     repositories {
         mavenCentral()
         flatDir {
             dirs
         }
-    }
+    }*/
 
    /* dependencies {
     classpath ("com.android.tools.build:gradle:8.2.2.")
     }*/
-}
+//}
 android {
 
     namespace = "com.example.libraryproject"
