@@ -20,9 +20,9 @@ buildscript {
         }
     }
 
-    dependencies {
-    //    classpath ("com.github.kezong:fat-aar:1.3.8")
-    }
+   /* dependencies {
+    classpath ("com.android.tools.build:gradle:8.2.2.")
+    }*/
 }
 android {
 
