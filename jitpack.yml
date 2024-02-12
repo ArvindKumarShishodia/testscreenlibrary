@@ -1,5 +1,0 @@
-# configuration file for building snapshots and releases with jitpack.io
-language: android
-sudo: false
-dist: trusty
-jdk: openjdk18
