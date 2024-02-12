@@ -3,6 +3,7 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("base")
+    id("maven-publish")
 }
 buildscript {
     repositories {

@@ -4,6 +4,7 @@ plugins {
     id("org.jetbrains.kotlin.android") version "1.9.0" apply false
     id("io.spring.dependency-management") version "1.1.4"
     id("java")
+    id("maven-publish")
 
    // id("com.kezong.fat-aar") version "1.3.8" apply false
 
