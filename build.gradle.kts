@@ -1,8 +1,8 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
     id("com.android.application") version "8.2.2" apply false
+    id("com.android.library") version "8.2.2" apply false
     id("org.jetbrains.kotlin.android") version "1.9.0" apply false
-    id("io.spring.dependency-management") version "1.1.4"
     id("java")
     id("maven-publish")
 

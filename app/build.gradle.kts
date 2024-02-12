@@ -180,3 +180,8 @@ task("download",Copy:: class) {
         mavenLocal()
     }
 }*/
+//publishing{
+//    publications {
+//        maven(MavenPublication)
+//    }
+//}
