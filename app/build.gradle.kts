@@ -15,7 +15,7 @@ buildscript {
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("base")
+   // id("base")
     id("maven-publish")
 }
 /*publishing{
@@ -87,14 +87,14 @@ android {
     }
 }
 
-configurations {
+/*configurations {
  //   toCopy
 }
 configurations {
    // myCustomConfiguration {
         //canBeResolved true
     //}
-}
+}*/
 dependencies {
 
 

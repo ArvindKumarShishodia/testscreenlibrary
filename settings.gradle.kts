@@ -1,5 +1,3 @@
-import java.net.URL
-
 pluginManagement {
     repositories {
         google()
@@ -14,7 +12,7 @@ dependencyResolutionManagement {
        /* maven {
             maven { URL=uri("https://plugins.gradle.org/m2/") }
         }*/
-        maven {
+       /* maven {
             url = uri("https://maven.pkg.jetbrains.space/public/p/ktor/eap")
         }
         maven {
@@ -22,7 +20,7 @@ dependencyResolutionManagement {
         }
         maven {
             url = uri("https://plugins.gradle.org/m2/")
-        }
+        }*/
 
         google()
         mavenCentral()
