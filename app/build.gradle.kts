@@ -53,13 +53,13 @@ android {
     }
 
     buildTypes {
-        release {
+      /*  release {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-        }
+        }*/
     }
 
     java{
@@ -78,7 +78,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.3.2"
     }
     packaging {
         resources {
@@ -118,6 +118,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
 
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
+    implementation (platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+
     //implementation("com.github.kezong:fat-aar:1.3.8")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
@@ -151,16 +153,30 @@ dependencies {
 /*task("copyDependencies", Copy::class) {
     from(configurations.default).into("$buildDir/outputs/.aar/dependencies")
 }*/
-task("copyDependencies", Copy::class) {
+/*task("copyDependencies", Copy::class) {
     from(configurations.implementation).into("libs")
     //from(configurations.implementation).into("libs")
 }
 task("download",Copy:: class) {
     from(configurations.implementation).into("libs")
-}
+}*/
 //task copyDependencies(type: Copy) {
 //    from configurations.runtimeClasspath
 //            into "$buildDir/outputs/aar/dependencies"
 //}
 
-
+/*publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.arvindshishodia'
+            artifactId = 'sizeindeplib'
+            version = "1.0"
+            pom {
+                description = 'First Android library'
+            }
+        }
+    }
+    repositories {               // << --- ADD This
+        mavenLocal()
+    }
+}*/
